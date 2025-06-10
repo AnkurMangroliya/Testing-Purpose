@@ -10,4 +10,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Greet the world
-        run: echo "👋 Hello from GitHub Actions!"
+        run: echo "👋 Hello from GitHub Actions on ${{ github.event_name }}"
