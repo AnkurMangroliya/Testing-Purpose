@@ -25,3 +25,13 @@ jobs:
 
       - name: Show Files
         run: ls -la
+
+  demo-env:
+    needs: say_hello
+    runs-on: ubuntu-latest
+    env:
+      NAME: "Ankur"
+    
+    steps:
+      - name: Greet
+        run: echo "Hi $NAME"
