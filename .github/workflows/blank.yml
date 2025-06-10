@@ -11,3 +11,9 @@ jobs:
     steps:
       - name: Greet the world
         run: echo "👋 Hello from GitHub Actions on ${{ github.event_name }}"
+      - name: step 2
+        run: echo "${{ github.repository }}"
+      - name: step 3
+        run: echo "${{ github.actor }}"
+      - name: step 4
+        run: echo "${{ github.ref }}"
